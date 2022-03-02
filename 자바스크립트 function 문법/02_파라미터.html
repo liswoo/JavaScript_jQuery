@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/동적UI만드는step/alert박스만들기.css"> <!--현재 html과, css 파일 링크걸기-->
+    <title>파라미터</title>
+</head>
+<body>
+    <div class="alert-box" id="box_01">알림창</div>
+
+    <button onclick="알림창조작('block')">열기</button>
+    <button onclick="알림창조작('none')">닫기</button>
+  
+
+
+</body>
+<!-- 조작할 html하단에 javaScript 코드를 짜야 잘 동작한다. 먼저 html을 읽어야 하기 때문이다. -->
+<script>
+ // 자바스크립트 function문법 : 긴코드 축약하고 싶을때 사용한다. 
+ // function 내에 구멍을 뚫습니다. 
+ // 1. ()소괄호 내에 아무 글자나 적고
+ // 2. {}중괄호 내에도 같은 글자 아무데나 적으면 됩니다. 아래 함수에서는 아무 글자가 '구멍' 입니다.
+ // 왜쓰냐고?..비슷한 함수 여러개 있을 때, 굳이 여러개 만들 필요 없이 구멍 뚫어서 사용합니다.
+ // 쪽팔리니까..이제부터 구멍을 '파라미터' 라고 합니다...
+
+ function 알림창조작(구멍){
+  document.getElementById('box_01').style.display = 구멍;
+ }
+ 
+
+</script>
+</html>
