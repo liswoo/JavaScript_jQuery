@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트는, html을 조작하기 위해 사용한다.</title>
+</head>
+<body>
+    <h1 id="hello">안녕하세요</h1>
+    <h1 id="novice">js초보에요</h1>
+</body>
+<script>
+    document.getElementById('hello').innerHTML = '안녕'; //id가 hello인 html을 -> '안녕' 으로 바꾸는 코드.
+    document.getElementById('hello').style.color = 'red'; //id가 hello인 html을 -> 스타일.컬러 를 red로 바꾸는 코드.
+    document.getElementById('novice').innerHTML = 'js고수에요'; //id가 novice인 html을 -> 'js고수에요' 로 바꾸는 코드.
+</script>
+</html>
+
+<!-- getElementById()는 셀렉터라고 부른다. html요소를 찾기 위해 사용한다. 여기서는 id가 hello, novice인 <h1>태그를 찾는데 쓰였다.
+.innerHTML/ .style / .color 이렇게 점찍는데 괄호없는것은 메소드(또는 함수)라고 부른다. html요소의 어떤 속성을 변경할지 결정하기 위해 사용한다. -->

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alert박스 만들기</title>
+    <link rel="stylesheet" href="alert박스만들기.css"> <!--현재 html과, css 파일 링크걸기-->
+</head>
+<body>
+    <!-- UI 만드는 방법 -->
+    <!-- 1.html css 로 미리 UI디자인 해놓고, 필요하면 평소에 숨긴다 -->
+    <!-- 버튼을 누르거나 할 경우, UI를 보여달라고 자바스크립트 코드를 짠다. -->
+   
+   
+    <div class="alert-box" id="box_01">알림창</div>
+
+    <button onclick="document.getElementById('box_01').style.display = 'block';">열기</button>
+    <!-- <button onclick="alert박스 열어주세요.">버튼</button> -->
+    
+    <button onclick="document.getElementById('box_01').style.display = 'none';">닫기</button>
+    <!-- <button onclick="alert박스 닫아주세요.">버튼</button> -->
+
+</body>
+</html>
